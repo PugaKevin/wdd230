@@ -12,12 +12,17 @@ header {
   text-align: center;
   background-color: lightpink;
   border-radius: 10px;
+  font-family: 'Cantarell', sans-serif;
 }
 body {
     padding-top:10px; 
+    font-family: 'Cantarell', sans-serif;
 }
 h2 {
     font-size: 20px;
+}
+h1, h2, h3 {
+  font-family: 'Cantarell', sans-serif;
 }
 header img {
   width: 150px;
@@ -32,6 +37,7 @@ footer {
   padding: 10px;
   text-align: center;
   border-radius: 10px;
+  font-family: 'Cantarell', sans-serif;
 }
 
 #lastmodtitle {
