@@ -8,7 +8,7 @@ header {
   font-size: 30px;
 }
 body {
-    padding-top:10px; 
+  width: 100%;
 }
 h2 {
     font-size: 20px;
@@ -43,7 +43,4 @@ footer {
 }
 a {
     color: black;
-}
-body{
-  width: 100%;
 }
