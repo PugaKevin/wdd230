@@ -1,0 +1,12 @@
+@media (min-width:60em){
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 750px;
+    }
+    main section:nth-child(3){
+        grid-column: span 1; 
+    }
+    img {
+        width: 300px;
+    }
+}
