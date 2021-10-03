@@ -1,0 +1,17 @@
+@media only screen and (min-width: 37.5em){
+    h1 {
+        font-size: 32px;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    td img {
+        max-width: 225px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
