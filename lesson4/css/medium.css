@@ -1,0 +1,22 @@
+@media only screen and (min-width: 32.5em){
+    .navmenu {
+        display: flex;
+    }
+    .navmenu li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navmenu a {
+        text-align: center;
+    }
+    .navmenu li:first-child{
+        display: none;
+    }
+    header img {
+        width: 120px;
+
+    }
+    .themotto{
+        font-size: 20px;
+    }
+}
