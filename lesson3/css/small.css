@@ -71,14 +71,20 @@ table {
   }
   
 td, th {
-    border: 1px solid gray;
     text-align: left;
     padding: 8px;
+    border: none;
   }
   
 td img {
     max-width: 80px;
 }
 p{
+    font-family: cursive;
+}
+.ex1{
+    font-family: 'Titan One', cursive;
+}
+.ex2 {
     font-family: cursive;
 }
