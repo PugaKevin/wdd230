@@ -1,74 +1,202 @@
-@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
-* {
-	margin: 0;
-	padding: 0;
-}
-body {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 18px;
-	font-family: Acme, Arial, sans-serif;
-}
-
-h1 {
-	font-size: 1.5rem;
-}
-
+/*Small*/
 main {
-	margin: 0.5rem auto;
-	border: 1px solid #999;
-	padding: 0.5rem;
-	background-color: #bed;
-	display: grid;
-	grid-template-columns: 1fr;
-	width: 95%;
+    max-width: 100%;
+    padding: 10px;
+}
+h1 {
+    font-size: 30px;
+}
+h1,
+h2 {
+    font-family: 'Titan One', cursive;
+}
+body{
+    background-color: lightskyblue;
+    max-width: 100%;
+    align-items: center;
+}
+header,
+footer {
+    padding: 10px;
 }
 
-input,
-button {
-	padding: 0.35rem;
-	margin-left: 1rem;
-	font-size: 1.1rem;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-input {
-	width: 200px;
+footer {
+    text-align: center;
+    font-family: cursive;
 }
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.themotto{
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px ;
+}
+header img {
+    width: 90px;
+    height: auto;
+    margin-right:10px ; 
+}
+nav{
+    margin: 0 auto; 
+    max-width: 750px;
+}
+.navmenu{
+    list-style: none;
+    padding: 0;
+}
+.navmenu li:first-child {
+    display: block;
+}
+.navmenu li {
+    display: none;
+}
+.navmenu a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+    transition: 0.25s;
+}
+.navmenu a:hover {
+    color: white;
+    background-color: black;
+}
+.responsive li {
+    display: block;
+}
+.info {
+    max-width: 750px ;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+}
+.wesummary,
+.fiforecast,
+.article1,
+.contact {
+    padding: 10px;
+    font-family: cursive; 
+    margin: auto;
+}
+.hero {
+    margin: 10px auto;
+    border: 1px solid black; 
+    width: 100%;
+    height: 250px
+    
+}
+.hero img {
+    width: 100%;
+    height: 250px
+}
+.herowrap {
+    margin: 10px auto;
+    position: relative;
+    width: 100% ; 
+    height: 250px;
+}
+.wesummary {
+    position: absolute; 
+    top: 20px; 
+    left: 75px;
+    background: radial-gradient(lightblue,lightskyblue,gray);
+}
+.wesummary h3,
+p {
+    color: black;
+    font-size: 14px;
+}
+.fiforecast {
+    display: none;
+}
+.article {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+}
+.article1 {
+    text-align: justify;
+    display: inline;
+}
+.article1 h3 {
+    text-align: center;
+}
+.article img {
+    width: 250px;
+    height: 250px;
+    color: #111;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 90px;
+    float: left;
+    shape-outside: ellipse();
+    padding: 5px;
+    background-clip: content-box;
+}
+.tab {
+    text-indent: 30px;
+}
+.author {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: cursive;
+}
+.contactinfo {
+    max-width: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 5px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .address img {
+      width: 400px;
+      display: none;
+      float: left;
+  }
+  .infobanner{
+      background-color: orange;
+      width: 100%;
+      font-weight: 500;
+      color: black;
+      padding: 20px; 
+      margin: auto;
+      font-size: 20px;
+      font-weight: bold;
+  }
 
-label {
-	font-size: 0.9rem;
+.choosenone::before {
+    content: "🌤️";
 }
-.listcontainer {
-	border: 1px solid #bbb;
-	margin: 1rem;
-	padding: 1rem;
-}
-
-.list {
-	margin: 0.2rem;
-}
-
-ul {
-	margin: 1rem;
-	list-style: none;
-}
-
-li {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 0.5rem;
-}
-
-@media only screen and (min-width: 32.5em) {
-	h1 {
-		font-size: 2rem;
-	}
-
-	main {
-		width: 480px;
-	}
-}
+ 

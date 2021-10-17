@@ -1,0 +1,22 @@
+@media (min-width:60em)
+{
+    .themotto{
+        font-size: 30px;
+    }
+    .article img {
+        width: 300px;
+        height: 300px;
+    }
+    .address img {
+        width: 450px;
+    }
+    .contactinfo {
+        height: 400px;
+    }
+    .info {
+        max-width: 950px;
+    }
+    .article {
+        height: 450px;
+    }
+}
