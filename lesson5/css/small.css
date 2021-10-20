@@ -48,7 +48,7 @@ header img {
 }
 nav{
     margin: 0 auto; 
-    max-width: 750px;
+    max-width: 100%;
 }
 .navmenu{
     list-style: none;
