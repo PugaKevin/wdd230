@@ -145,7 +145,8 @@ p {
     max-width: 100%;
     height: auto;
     border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
+    
 }
 .article1 {
     text-align: justify;
@@ -221,4 +222,8 @@ p {
 .choosenone::before {
     content: "🌤️";
 }
+.choosenone {
+    background-color: lightgray;
+}
+
  
