@@ -7,8 +7,7 @@ button.addEventListener('click', function() {
 
 
   if (myitem === ""){
-      var error = new Error('Please use Book of Mormon Chapters');
-      throw error ; 
+      alert("Box Cannot be empty.") 
   }else {
 
             const listitem = document.createElement('li');
@@ -24,7 +23,9 @@ button.addEventListener('click', function() {
             listbutton.onclick = function(deleteitem) {
             list.removeChild(listitem);
             }
+            input.value = "";
+            input.focus();
   }
 
 })
-  input.focus();
+  
