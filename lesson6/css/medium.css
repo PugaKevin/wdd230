@@ -67,5 +67,11 @@
         color: red;
         display: block;
     }
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container img {
+        padding: 5px;
+    }
 
 }
