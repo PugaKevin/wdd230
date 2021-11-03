@@ -92,17 +92,16 @@ nav{
 }
 .hero {
     margin: 10px auto;
-    border: 1px solid black; 
     width: 100%;
 }
-.hero img {
-    width: 100%;
-    object-fit: cover;
-}
+
 .herowrap {
     margin: 10px auto;
     position: relative;
     width: 100% ; 
+}
+.hero img{
+    width: 100%;
 }
 .wesummary {
     position: absolute; 
@@ -114,17 +113,10 @@ nav{
     box-shadow: 10px 10px 5px #ccc;
     font-family: serif;
     font-weight: 800;
-}
-.small{
-    position: absolute;
-    top: 50px;
-    left: 350px;
-    font-size: 20px;
-    color: red;
-}
-.medium, .large {
+    font-size: 10px;
     display: none;
 }
+
 table th,
 td {
     background-color: lightgray;

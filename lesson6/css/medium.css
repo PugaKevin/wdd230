@@ -16,6 +16,12 @@
         width: 120px;
 
     }
+    .wesummary {
+        position: absolute; 
+        top: 0px; 
+        left: 75px;
+        display: block;
+    }
     .themotto{
         font-size: 20px;
     }
@@ -56,17 +62,7 @@
         display: block;
         padding: 10px;
     }
-    .small{
-        display: none;
-    }
-    .medium {
-        position: absolute;
-        top: 50px;
-        left: 420px;
-        font-size: 26px;
-        color: red;
-        display: block;
-    }
+
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
