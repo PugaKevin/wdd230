@@ -51,19 +51,16 @@ img[data-src]{
     min-height: 50px ;
     border: 1px solid red;
 }
-.grid img {
-    width: 300px;
-    height: 400px ;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
 picture img[data-src] {
     filter: blur(0.2em);
 }
-
 picture img {
+    margin-bottom: 15px;
     filter: blur(0em);
     transition: filter 0.5s;
-    margin-bottom: 15px;
+}
+.grid img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
