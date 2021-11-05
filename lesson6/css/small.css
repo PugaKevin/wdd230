@@ -224,12 +224,12 @@ p {
 
 }
 .galleryimgcon {
-    padding: 10px;
+    padding: 3px;
     text-align: center;
 
 }
 .container img {
-    padding: 10px;
+    padding: 3px;
 }
 picture img[data-src] {
     filter: blur(0.2em);
@@ -239,5 +239,8 @@ picture img {
     filter: blur(0em);
     transition: filter 0.5s;
     margin-bottom: 15px;
+}
+.undertext {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
  
