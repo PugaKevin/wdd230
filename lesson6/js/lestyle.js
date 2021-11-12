@@ -26,3 +26,10 @@ if(day === 5) {
     infobanner.style.display = "none";
 }
 
+/*Counter for website */
+const count = document.querySelector('#count');
+const testingThis = "This is the test";
+
+localStorage.setItem("THISISATEST", JSON.stringify(testingThis));
+const myLocalData = JSON.parse(localStorage.getItem("THISISATEST")) ;
+console.log(myLocalData) ;

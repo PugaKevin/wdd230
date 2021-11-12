@@ -1,0 +1,51 @@
+/*small*/
+body {
+    background:gainsboro;
+    margin: 0 auto;
+    max-width: 85em;
+}
+.cards {
+    display: grid;
+    color: #FFFAFF;
+    text-align: center;
+    max-width: 98%;
+    background-color: #1E1B18;
+    box-shadow: 10px 0px 60px 0px #3E92CC;
+}
+h1 {
+    text-align: center;
+    color: #0A2463;
+}
+.cards section {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    grid-gap: 5px;
+
+}
+.cards img {
+    padding: 3px ; 
+    max-width: 90%;
+}
+footer {
+    text-align: center;
+    font-size: 1em; 
+    padding: 10px;
+}
+
+/*Medium view*/
+@media only screen and (min-width: 32.5em){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*Large view*/
+@media (min-width:60em){
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .cards section {
+        border: 5px solid #3E92CC;
+    }
+}

@@ -11,6 +11,7 @@ header {
 body {
   max-width: 100%;
   font-family: "Oswald";
+  padding: 10px;
 }
 h2 {
     font-size: 20px;
@@ -30,10 +31,11 @@ main ul {
 header,
 footer {
   background-color: lightpink;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   border-radius: 10px;
   font-family: 'Cantarell', sans-serif;
+  max-width: 100%;
 }
 
 #lastmodtitle {
@@ -48,6 +50,7 @@ a {
 }
 h2,
 ul {
-  padding-left: 10px;
+  padding-left: 1px;
   list-style-type: none;
+  list-style-position: inside;
 }
