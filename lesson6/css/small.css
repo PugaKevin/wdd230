@@ -99,6 +99,7 @@ nav{
     margin: 10px auto;
     position: relative;
     width: 100% ; 
+    max-width: 900px;
 }
 .hero img{
     width: 100%;
@@ -238,10 +239,70 @@ picture img {
     margin-bottom: 15px;
 }
 .undertext {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: cursive;
 }
 .text {
     display: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.severoptions {
+    display: block;
+    padding: 8px;
+}
+form fieldset {
+    margin: auto;
+    padding:  8px;
+    border-radius: 16px ;
+    border: 1px solid gray;
+    text-align: center;
+    max-width: 720px ;
 }
 
- 
+form legend {
+    padding: 8px; 
+    font-size: 20px;
+    text-align: center;
+    font-family:  cursive;
+}
+
+form label.stormlabel, form div {
+    display: block;
+    padding-top: 8px;
+    font-size: 16px ; 
+    text-align: center;
+    font-family: cursive;
+}
+#ranking {
+    color: red;
+    margin: 0;
+    margin: 0 15px;
+} 
+form label.opt {
+    display: block;
+    padding: 8px;
+}
+label.comments textarea {
+    display: block; 
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+form input.submitbut {
+    padding: 8px;  
+    max-width: 100%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input, textarea {
+    border-radius: 5px;
+}
+.thanks {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
