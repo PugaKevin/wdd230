@@ -1,0 +1,337 @@
+/*Small*/
+main {
+    max-width: 100%;
+    padding: 10px;
+}
+h1 {
+    font-size: 30px;
+}
+h1,
+h2 {
+    font-family: 'Titan One', cursive;
+}
+body{
+    background-color: lightskyblue;
+    max-width: 100%;
+    align-items: center;
+}
+header,
+footer {
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    font-family: cursive;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.themotto{
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px ;
+}
+header img {
+    width: 90px;
+    height: auto;
+    margin-right:10px ; 
+}
+nav{
+    margin: 0 auto; 
+    max-width: 100%;
+}
+.navmenu{
+    list-style: none;
+    padding: 0;
+}
+.navmenu li:first-child {
+    display: block;
+}
+.navmenu li {
+    display: none;
+}
+.navmenu a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+    transition: 0.25s;
+}
+.navmenu a:hover {
+    color: white;
+    background-color: black;
+}
+.responsive li {
+    display: block;
+}
+.info {
+    max-width: 750px ;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+}
+.wesummary,
+.fiforecast,
+.article1,
+.contact {
+    padding: 10px;
+    font-family: cursive; 
+    margin: auto;
+}
+.forecast {
+    background: white;
+}
+.hero {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.herowrap {
+    margin: 10px auto;
+    position: relative;
+    width: 100% ; 
+    max-width: 1000px;
+}
+.hero img{
+    width: 100%;
+}
+.wesummary {
+    position: absolute; 
+    top: 20px; 
+    left: 75px;
+    background: radial-gradient(lightblue,lightskyblue,gray);
+    opacity: 0.7;
+    border:2px solid #fff;
+    box-shadow: 10px 10px 5px #ccc;
+    font-family: serif;
+    font-weight: 800;
+    font-size: 10px;
+    display: none;
+}
+
+table th,
+td {
+    background-color: lightgray;
+}
+
+.wesummary h3,
+p {
+    color: black;
+    font-size: 14px;
+}
+.fiforecast {
+    display: none;
+}
+.article {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 5px;
+    background: white;
+    
+}
+.article1 {
+    text-align: justify;
+    display: inline;
+}
+.article1 h3 {
+    text-align: center;
+}
+.article1 img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    color: #111;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 90px;
+    float: left;
+    shape-outside: ellipse();
+    padding: 5px;
+    background-clip: content-box;
+}
+.tab {
+    text-indent: 30px;
+    font-family: 'Oswald';
+    font-weight: 800;
+}
+.author {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: cursive;
+}
+.contactinfo {
+    max-width: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 5px;
+    background: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.address img {
+    width: 400px;
+    height: auto; 
+    display: none;
+    float: left;
+    object-fit: contain;
+}
+.infobanner{
+    background-color: orange;
+    width: 100%;
+    font-weight: 500;
+    color: black;
+    padding: 20px; 
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.choosenone::before {
+    content: "🌤️";
+}
+.choosenone {
+    background-color: lightgray;
+}
+.container {
+    display: grid;
+    justify-content: center;
+    max-width: 100%;
+
+}
+.galleryimgcon {
+    text-align: center;
+    width: 100%;
+
+}
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin-bottom: 15px;
+}
+.undertext {
+    font-family: cursive;
+}
+.text {
+    display: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.severoptions {
+    display: block;
+    padding: 8px;
+}
+form fieldset {
+    margin: auto;
+    padding:  8px;
+    border-radius: 16px ;
+    border: 1px solid gray;
+    text-align: center;
+    max-width: 720px ;
+    background: white;
+}
+
+form legend {
+    padding: 8px; 
+    font-size: 20px;
+    text-align: center;
+    font-family:  cursive;
+    background: gray;
+    border-radius: 50%;
+}
+
+form label.stormlabel, form div {
+    display: block;
+    padding-top: 8px;
+    font-size: 16px ; 
+    text-align: center;
+    font-family: cursive;
+}
+#ranking {
+    color: red;
+    margin: 0;
+    margin: 0 15px;
+} 
+form label.opt {
+    display: block;
+    padding: 8px;
+}
+label.comments textarea {
+    display: block; 
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+form input.submitbut {
+    padding: 8px;  
+    max-width: 100%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input, textarea {
+    border-radius: 5px;
+}
+.thanks {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+section.createtown {
+    max-width: 100%;
+	margin: 0.5rem auto;
+    display: grid;
+}
+.towns {
+    border: 1px solid black;
+    padding: 8px;
+}
+article {
+    display: grid;
+	max-width: 200px;
+}
+.towns {
+    background: white;
+    text-align: center;
+    padding: 8px;
+}
+.wireframe img {
+    max-width: 400px;
+    
+}

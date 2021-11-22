@@ -1,0 +1,94 @@
+@media (min-width:60em)
+{
+   
+    .themotto{
+        font-size: 30px;
+    }
+    table {
+        width: 80%;
+    }
+    td img {
+        width: 100%;
+        height: auto;
+    }
+    .article1 img {
+        width: 375px;
+        height: 375px;
+        object-fit: cover;
+    }
+    .address img {
+        width: 450px;
+        height: auto; 
+    }
+    .contactinfo {
+        height: 400px;
+        width: auto;
+    }
+    .article {
+        height: 500px;
+    }
+    .info {
+        max-width: 950px;
+    }
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+        box-shadow: 10px 10px 5px #000000;
+      }
+      
+      .container1:hover .overlay {
+        opacity: .75;
+      }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: block;
+      }
+      .container1 {
+        position: relative;
+        width: 100%;
+      }
+     article { 
+         display: block;
+     }
+     section.createtowns {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-gap: 5px;
+         font-family: cursive;
+     }
+     .town0 {
+         grid-column: 1;
+     }
+     .town2 {
+         grid-column: 2;
+     }
+     .town6{
+         grid-column: 3;
+     }
+     img  {
+         width: 200px;
+     }
+
+
+
+}
