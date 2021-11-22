@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../lesson6/css/normalized.css">
+    <link rel="stylesheet" href="../lesson6/css/small.css">
+    <link rel="stylesheet" href="../lesson6/css/medium.css">
+    <link rel="stylesheet" href="../lesson6/css/large.css">
+    <title>Preston page few details on what is going on</title>
+    <script defer src="../lesson11/js/lestyle.js"></script>
+    <script defer src="../lesson11/js/weatherapi.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="../lesson11/js/webfontload.js"></script>
+</head>
+<body>
+    <div class="infobanner">🥞Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city 
+        park pavilion.
+    </div>
+    <header>
+        <img src="../lesson4/images/weatherIcon.png" alt="The Logo of the website/thuder sign warning">
+        <section class="title"><h1>Welcome to the Scoopanator!</h1>
+        <q class="themotto">Come get the scoop!</q></section>
+    </header>
+    <nav>
+        <ul class="navmenu">
+            <li><a class="hammiestyle" href="#">Menu</a></li>
+            <li><a href="../lesson11/index.html">Home</a></li>
+            <li><a href="../lesson11/preston.html" class="choosenone">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="info">
+        <h2>Preston Idaho</h2>
+        <div class="herowrap">
+        <div class="hero">
+            <picture>
+                <source srcset="../lesson11/images/500.jpg" media ="(min-width: 32.5em) and (max-width: 59em">
+               <source srcset="../lesson11/images/700.jpg" media ="(min-width: 60em)">
+
+               <img src="../lesson11/images/400.jpg" alt="wdd230 sample picture at 400px fo a landscape">
+           </picture>
+
+        </div>
+        <section class="wesummary">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="currently"></span></p>
+            <p>Temperature: <span id="temp"></span>°F</p>
+            <p>Wind: <span id="speed"></span> Mph</p>
+            <p>Wind Chill: <span id="windchilla"></span>°F </p>
+            <p>Humidity: <span id="humi"></span>%</p>
+
+        </section>
+        </div>
+        <section class="forecast">
+            <div class="fiforecast"><h3>Five Day Forecast</h3>
+                <table>
+                    <tr>
+                        <th><span id="day1"></span></th>
+                        <th><span id="day2"></span></th>
+                        <th><span id="day3"></span></th>
+                        <th><span id="day4"></span></th>
+                        <th><span id="day5"></span></th>
+                    </tr>
+                    <tr>
+                        <td><img id="img1" src="" alt=""><br><span id="temp1"></span>°F</td>
+                        <td><img id="img2" src="" alt=""><br><span id="temp2"></span>°F</td>
+                        <td><img id="img3" src="" alt=""><br><span id="temp3"></span>°F</td>
+                        <td><img id="img4" src="" alt=""><br><span id="temp4"></span>°F</td>
+                        <td><img id="img5" src="" alt=""><br><span id="temp5"></span>°F</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="article">
+            <div class="article1"><h3>Color Run!</h3><br>
+                <picture>
+                    <source srcset="../lesson11/images/colorfunmedium.jpg" media ="(mid-width: 32.5em) and (max-width: 59em)">
+                    <source srcset="../lesson11/images/colorfunlarge.jpg" media ="(min-width: 60em)">
+
+                    <img src="../lesson11/images/colorfunsmall.jpg" alt="fun color festival Photo by Marcin Dampc from Pexels">
+                </picture>
+                
+                <p class="author">by Louis Lane</p>
+                <p class="tab">Lorem ipsum dolor sit amet, iriure alienum mea no, quo et habemus constituto, choro legendos mea cu. 
+                    Ius tale aliquip tritani te. Ei eam option integre urbanitas, et has tale meis dolorem. At case 
+                    volumus appellantur mel, erant vitae ex pro, errem alterum eleifend vim cu.</p>
+
+                <p class="tab">An iuvaret efficiantur nec, mei eu iracundia intellegat. Te audire quaestio sea. In eam sonet dolorum. 
+                    Expetendis definitiones eam et, ponderum similique has ut. Id eos vivendo epicuri definitionem, 
+                    ea est harum bonorum gloriatur.
+                    </p>
+                <p class="tab">Sale incorrupte eu per, qui fabellas evertitur temporibus ad. In est legere tempor sadipscing. Assum 
+                    choro dolorem eu pri, in aliquid ornatus signiferumque quo. Eu vix tation copiosae constituto. Quod mazim aeque 
+                    an mea, case novum suscipit ad eam.</p>
+            </div>
+        </section>
+        <section class="contactinfo">
+            <div class="contact">
+                <div class="address">
+                    <picture>
+                        <source srcset="../lesson11/images/maplarge.jpg" media ="(min-width: 60em)">
+                        <img src="../lesson6/images/mapmedium.jpg" alt="Map of idaho Photo by Binyamin Mellish from Pexels">
+
+                    </picture>
+                    
+                    <h3>The Scoopanator</h3>
+                    📍304 N Main St, Pocatello, ID 83204<br>
+                    📞(248)434-5508<br>
+                    📧scoopascoopa@notreal.com
+                </div>
+                <p class="social">
+                    <a href="https://www.youtube.com/watch?v=O91DT1pR1ew" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.youtube.com/watch?v=O91DT1pR1ew" target="_blank" class="fa fa-twitter"></a>
+                </p>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+       &copy;<span id="currentdate"></span> | The Scoopanator | BYU-Idaho | Kevin Puga
+       <p id="time"></p>
+    </footer>
+</body>
+</html>
