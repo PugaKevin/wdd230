@@ -90,6 +90,9 @@ nav{
     font-family: cursive; 
     margin: auto;
 }
+.forecast {
+    background: white;
+}
 .hero {
     margin: 10px auto;
     width: 100%;
@@ -99,7 +102,7 @@ nav{
     margin: 10px auto;
     position: relative;
     width: 100% ; 
-    max-width: 900px;
+    max-width: 1000px;
 }
 .hero img{
     width: 100%;
@@ -136,6 +139,8 @@ p {
     height: auto;
     border: 1px solid black;
     padding: 10px;
+    margin-top: 5px;
+    background: white;
     
 }
 .article1 {
@@ -145,7 +150,7 @@ p {
 .article1 h3 {
     text-align: center;
 }
-.article img {
+.article1 img {
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -174,6 +179,7 @@ p {
     border: 1px solid black;
     padding: 5px;
     margin-top: 5px;
+    background: white;
 }
 .fa {
     padding: 20px;
@@ -189,29 +195,28 @@ p {
 .fa-facebook {
     background: #3B5998;
     color: white;
-  }
-  .fa-twitter {
+}
+.fa-twitter {
     background: #55ACEE;
     color: white;
-  }
-  .address img {
-      width: 400px;
-      height: auto; 
-      display: none;
-      float: left;
-      object-fit: contain;
-  }
-  .infobanner{
-      background-color: orange;
-      width: 100%;
-      font-weight: 500;
-      color: black;
-      padding: 20px; 
-      margin: auto;
-      font-size: 20px;
-      font-weight: bold;
-  }
-
+}
+.address img {
+    width: 400px;
+    height: auto; 
+    display: none;
+    float: left;
+    object-fit: contain;
+}
+.infobanner{
+    background-color: orange;
+    width: 100%;
+    font-weight: 500;
+    color: black;
+    padding: 20px; 
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
 .choosenone::before {
     content: "🌤️";
 }
@@ -244,7 +249,6 @@ picture img {
 .text {
     display: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 .severoptions {
     display: block;
@@ -257,6 +261,7 @@ form fieldset {
     border: 1px solid gray;
     text-align: center;
     max-width: 720px ;
+    background: white;
 }
 
 form legend {
@@ -264,6 +269,8 @@ form legend {
     font-size: 20px;
     text-align: center;
     font-family:  cursive;
+    background: gray;
+    border-radius: 50%;
 }
 
 form label.stormlabel, form div {
@@ -305,4 +312,26 @@ input, textarea {
     margin-right: auto;
     padding: 10px;
     text-align: center;
+}
+section.createtown {
+    max-width: 100%;
+	margin: 0.5rem auto;
+    display: grid;
+}
+.towns {
+    border: 1px solid black;
+    padding: 8px;
+}
+article {
+    display: grid;
+	max-width: 200px;
+}
+.towns {
+    background: white;
+    text-align: center;
+    padding: 8px;
+}
+.wireframe img {
+    max-width: 400px;
+    
 }

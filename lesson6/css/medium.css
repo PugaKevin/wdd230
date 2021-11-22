@@ -51,10 +51,11 @@
         margin-bottom: 5px;
         padding: 10px;
     }
-    .article img {
+    
+    .article1 img {
         object-fit: cover;
     }
-    .article {
+    .article1 {
         height: 450px;
     }
     .address img {
@@ -69,6 +70,27 @@
     .container img {
         padding: 5px;
     }
+    article {
+        display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 100%;
+        padding: 8px;
+        font-family: cursive;
     
+	}
 
+	article:nth-child(2) .image {
+		grid-column: 1;
+        
+	}
+
+	article:nth-child(2) .content {
+        grid-row: 1;
+        grid-column: 2;
+	}
+	
+	.image{
+		width: 100%;
+        padding: 10px;
+    }
 }
