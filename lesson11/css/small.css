@@ -330,8 +330,16 @@ article {
     background: white;
     text-align: center;
     padding: 8px;
+
 }
 .wireframe img {
     max-width: 400px;
     
+}
+.createtown {
+    justify-content: center;
+
+}
+.createtown img {
+    max-width: 200px;
 }
