@@ -22,6 +22,7 @@
     }
     .contactinfo {
         height: 400px;
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -41,13 +42,16 @@
         left: 0;
         right: 0;
         height: 100%;
-        width: 100%;
+        width: 70%;
         opacity: 0;
         transition: .5s ease;
         background-color: #008CBA;
         box-shadow: 10px 10px 5px #000000;
+        margin-left: auto;
+        margin-right: auto;
+
+        
       }
-      
       .container1:hover .overlay {
         opacity: .75;
       }
@@ -102,6 +106,9 @@
      .article1 p.author{
          font-size: 20px;
      }
+     article.EventsCard p {
+        font-size: 26px;
+    }
 
 
 

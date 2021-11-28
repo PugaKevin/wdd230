@@ -42,11 +42,52 @@ fetch(forecastURL)
             document.getElementById(`temp${day+1}`).textContent = timelist[day].main.temp.toFixed(1);
             //variables for future changes
             const imgalt = timelist[day].weather[0].description;
+            let cont = document.createElement("div");
+            let image = document.createElement("img");
             const imglink = 'https://openweathermap.org/img/wn/';
             const endfix = '@2x.png';
             //The setup
             const imagsrc = `${imglink}${timelist[day].weather[0].icon}${endfix}`;
             document.getElementById(`img${day+1}`).setAttribute('src', imagsrc);
             document.getElementById(`img${day+1}`).setAttribute('alt', imgalt);
+        
+
+
+           
         }
     });
+
+    const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json"
+    fetch(requestURL)
+        .then(function (response) {
+        return response.json();
+        })
+            .then(function (jsonObject) {
+                const towns = jsonObject ["towns"]
+                for (let i = 0; i < towns.length; i++) {
+                    let townfinder = `${towns[i].name}` ; 
+
+                    if(townfinder === "Preston") {
+                        let eventdiv = document.createElement("div");
+                        let card = document.createElement("article");
+                        let intro = document.createElement("h2");
+                        
+                        eventdiv.setAttribute("class", "Eventdiv");
+                        intro.textContent = `Upcoming Events:`; 
+                        card.setAttribute("class", "EventsCard");
+                        const arr = [`${towns[i].events[0]}`, `${towns[i].events[1]}`,`${towns[i].events[2]}`]
+                        arr.forEach(item => {
+                            let text = document.createElement("p");
+                            text.textContent = `${item}`;
+                            eventdiv.appendChild(text);
+                        });
+                        card.appendChild(intro);
+                        card.appendChild(eventdiv);
+                        document.querySelector('section.Events').appendChild(card);
+                        
+                    }else  {
+                        //Do nothing
+                    }
+                }
+
+            });

@@ -29,10 +29,5 @@ if(day === 5) {
 /*updating rating */
 function adjustRating(rating) {
     document.getElementById("ranking").innerHTML = rating; 
-    /*
-    if(parseInt($('#ranking').text()) <= 5) {
-        $('#ranking').css({"color":"green"});
-    }else {
-        $('#ranking').css({"color":"red"});
-    }*/
-}// 1de9fc6716174ce6e8044634a4474860
+   
+}
