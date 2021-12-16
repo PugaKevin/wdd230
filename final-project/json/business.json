@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Wing Nuts",
+        "tel": "435-272-2074",
+        "website": "https://www.bakedwingsarebetter.com/st-george.html",
+        "address": "250 Red Cliffs Drive #2 St. George UT 84790",
+        "description": "All about the wings baby"
+    },
+    {
+        "name": "Southern Utah Home Builders Association",
+        "tel": "435-674-1400",
+        "website": "https://www.suhba.com/",
+        "address": "2303 N. Coral Canyon Blvd, Ste 100-A Washington, UT 84780",
+        "description": "Support Home building industry"
+    },
+    {
+        "name": "Holiday Inn Express & Suites",
+        "tel": "435-986-1313",
+        "website": "https://www.ihg.com/holidayinnexpress/",
+        "address": "2450 N Town Center Dr. Washington, UT 84780",
+        "description": "Find a place to stay"
+    },
+    {
+        "name": "Huntsman World Senior Games",
+        "tel": "435-674-0550",
+        "website": "https://seniorgames.net/",
+        "address": "1070 W 1600 Stc A-103 St. George, UT 84770",
+        "description": "Sport for Games for seniors"
+    },
+    {
+        "name": "The Crepe Station",
+        "tel": "435-627-3161",
+        "website": "https://thecrepestation.business.site/",
+        "address": "520 W. Telegraph St. ste #2 Washington, UT 84780",
+        "description": "Delicious Crepes"
+    },
+    {
+        "name": "Red Cliffs Mall",
+        "tel": "435-986-1980 ",
+        "website": "https://www.redcliffsmall.com/",
+        "address": "1770 E. Red Cliffs Drive, Ste. 114 St. George, UT 84790 ",
+        "description": "There is something for everyone"
+    }
+    ,{
+        "name": "Tuacahn Center for the Arts",
+        "tel": "435-652-3300",
+        "website": "https://www.tuacahn.org/",
+        "address": "1100 Tuacahn Drive Ivins, Utah 84738",
+        "description": "Theater!"
+    }
+
+
+]

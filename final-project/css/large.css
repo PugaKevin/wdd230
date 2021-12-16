@@ -1,0 +1,50 @@
+@media (min-width:60em) {
+    .container {
+        max-width: 1000px;
+      }
+      .men {
+        font-size:30px;
+      }
+      .purpose {
+          font-size: 22px;
+      }
+      .contactinformation{
+        font-size: 22px;
+      }
+      .mendiv img {
+        max-width: 40px;
+      }
+      .ram {
+        font-size: 22px;
+      }
+      .ignite {
+        font-size: 22px;
+      }
+      .txt {
+        font-size: 22px;
+      }
+      .history101{
+        font-size: 22px;
+      }
+      .form {
+        font-size: 22px;
+      }
+      .washfair {
+        font-size: 22px;
+      }
+      .events{
+        font-size: 22px;
+      }
+      .weather {
+        font-size: 22px;
+      }
+      .join {
+        font-size: 22px;
+      }
+      .iron {
+        font-size: 22px;
+      }
+      .contact {
+        font-size: 22px;
+      }
+}

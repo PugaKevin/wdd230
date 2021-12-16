@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../final-project/css/normalized.css">
+    <link rel="stylesheet" href="../final-project/css/small.css">
+    <link rel="stylesheet" href="../final-project/css/medium.css">
+    <link rel="stylesheet" href="../final-project/css/large.css">
+    <script defer src="../final-project/js/menu.js"></script>
+    <script defer src="../final-project/js/grid.js"></script>
+    <script defer src="../final-project/js/dates.js"></script>
+    <title>Directory for Chamber of Commerce</title>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="headerhero">
+                <picture>
+                    <source srcset="../final-project/images/bannerlarge.jpg" media ="(min-width: 42em) and (max-width:60em)">
+                    <source srcset="../final-project/images/bannerxtra.jpg" media ="(min-width:60em)">
+
+                    <img src="../final-project/images/bannersmall.jpg" alt="Hiking image from pexel">
+                </picture>
+                
+            </div>
+        </header>
+            <main>
+
+                <div class="mendiv"><span class="men" onclick="openNav()">&#9776; Directory</span><a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank">
+                    <img class="socialIcon" src="../final-project/images/facebook2.png" alt="facebook Icon"></a>
+                    <a href="https://www.tiktok.com/@_ahmad_khan9/video/7035111972215557381?is_from_webapp=1&sender_device=pc&web_id7023547208214480390" target="_blank"><img class="socialIcon" src="../final-project/images/tik2.png" alt="Tik Tok Icon"></a>
+                </div>
+                
+
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="../final-project/home.html">Home</a>
+                        <a href="../final-project/washington.html">Washington</a>
+                        <a href="../final-project/directory.html">Directory</a>
+                        <a href="../final-project/join.html">Join</a>
+                        <a href="../final-project/contact.html">Contact</a>
+                    </div>
+                   
+                    <section class="business">
+                        <h2 class="title">Check out our locals!</h2>
+                        <div id="btnContainer">
+                            <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+                            <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+                          </div>
+                          <br>
+                          
+                          <div class="row">
+                            <div class="column">
+                               <span id="business0"></span>
+                            </div>
+                            <div class="column">
+                                <span id="business1"></span>
+                            </div>
+                          </div>
+                          
+                          <div class="row">
+                            <div class="column">
+                                <span id="business2"></span>
+                            </div>
+                            <div class="column">
+                                <span id="business3"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="column">
+                                <span id="business4"></span>
+                            </div>
+                            <div class="column" >
+                                <span id="business5"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="column">
+                                <span id="business6"></span>
+                            </div>
+                           
+                          </div>
+
+                    </section>
+
+
+            </main>
+            <footer>
+                &copy;<span id="currentdate"></span> | Washington Chamber of Commerce | UT<br>
+                    Last Updated: <span id="last"></span>
+            </footer>
+    </div>
+</body>
+</html>

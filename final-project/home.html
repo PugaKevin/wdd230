@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../final-project/css/normalized.css">
+    <link rel="stylesheet" href="../final-project/css/small.css">
+    <link rel="stylesheet" href="../final-project/css/medium.css">
+    <link rel="stylesheet" href="../final-project/css/large.css">
+    <script defer src="../final-project/js/menu.js"></script>
+    <script defer src="../final-project/js/weatherapi.js"></script>
+    <script defer src="../final-project/js/dates.js"></script>
+    <title>Welcome to the Washington HomePage for the Chamber of Commerce</title>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="headerhero">
+                <picture>
+                    <source srcset="../final-project/images/bannerlarge.jpg" media ="(min-width: 42em) and (max-width:60em)">
+                    <source srcset="../final-project/images/bannerxtra.jpg" media ="(min-width:60em)">
+
+                    <img src="../final-project/images/bannersmall.jpg" alt="Hiking image from pexel">
+                </picture>
+                
+            </div>
+        </header>
+            <main>
+
+                <div class="mendiv"><span class="men" onclick="openNav()">&#9776; Home</span><a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank">
+                    <img class="socialIcon" src="../final-project/images/facebook2.png" alt="facebook Icon"></a>
+                    <a href="https://www.tiktok.com/@_ahmad_khan9/video/7035111972215557381?is_from_webapp=1&sender_device=pc&web_id7023547208214480390" target="_blank"><img class="socialIcon" src="../final-project/images/tik2.png" alt="Tik Tok Icon"></a>
+                </div>
+                
+
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="../final-project/home.html">Home</a>
+                        <a href="../final-project/washington.html">Washington</a>
+                        <a href="../final-project/directory.html">Directory</a>
+                        <a href="../final-project/join.html">Join</a>
+                        <a href="../final-project/contact.html">Contact</a>
+                    </div>
+                <div class="vessel">
+                    
+                    <section class="purpose"><h2>A Mission with a vision: </h2>
+                        <p>The Washington Area Chamber of Commerce is dedicated to 
+                        supporting and growing business in the greater Washington Area, and connecting business with Community and Government. 
+                        We strive to foster a successful economy through the promotion of the area as an attractive travel and shopping 
+                        destination.</p>
+                    </section>
+
+                    <section class="events">
+                        <h2 class="upcoming">Upcoming Events</h2>
+                        <h4 class="tittledates">Thursday September 23rd 6pm </h4>
+                        <p class="entry">Welcome reception / dinner for Pilots, Sponsors, VIPs and media at 1510 East Ovation 
+                            Place Washington, Utah 84780 </p>
+                            <hr>
+                            <h4 class="tittledates">Friday, September 24th, 2021</h4>
+                            <p class="entry">7:30am – 10am: Morning Balloon Launch (Weather Permitting) at Staheli Family Farms,
+                                 3400 S Washington Fields Rd, Washington </p>
+                            <p class="entry">2pm-9pm: Vendor Market at Staheli Family Farms </p>
+                            <p class="entry">2pm-9pm: Bands on Main Stage at Staheli Family Farms </p>
+                            <p class="entry">2pm-9pm: Corn Maze // Pumpkin Patch // Farmland </p>
+                            <p class="entry">7pm-8pm: Balloon Glow at Staheli Family Farms</p>                            
+                            <hr>
+                            <h4 class="tittledates">Saturday, September 25th, 2021 </h4>
+                            <p class="entry">7:30am – 10am: Morning Balloon Launch (Weather Permitting) at Staheli Family Farms, 
+                                3400 S Washington Fields Rd, Washington </p>
+                            <p class="entry">11am-9pm: Vendor Market at Staheli Family Farms </p>
+                            <p class="entry">11am– 9pm: Bands at Staheli Family Farms </p>
+                            <p class="entry">11am-10pm: Corn Maze // Pumpkin Patch // Farmland at Staheli Family Farms </p>
+                            <strong>If you have any questions please reach out to use: (248)434-5508 or follow us for more updates: </strong><br>
+                            <div class="social"><a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank">
+                                <img class="socialIcon" src="../final-project/images/facebook2.png" alt="facebook Icon"></a>
+                                <a href="https://www.tiktok.com/@_ahmad_khan9/video/7035111972215557381?is_from_webapp=1&sender_device=pc&web_id7023547208214480390" target="_blank">
+                                <img class="socialIcon" src="../final-project/images/tik2.png" alt="Tik Tok Icon"></a></div>
+
+                    </section>
+                    <section class="weather">
+                        <h2 class="weathertitle">Weather forecast</h2>
+                            <div class="currenttemp">
+                                <p>Currently: <span id="currently"></span></p>
+                                <p>Temperature: <span id="temp"></span>°F</p>
+                                <p>Humidity: <span id="humi"></span>%</p>
+                            </div>
+                            <div class="weathertable">
+                                <h2>3 Day Forecast</h2>
+                                <table>
+                                    <tr>
+                                        <th><span id="day1"></span></th>
+                                        <th><span id="day2"></span></th>
+                                        <th><span id="day3"></span></th>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="img1" src="" alt=""><br><span id="temp1"></span>°F</td>
+                                        <td><img id="img2" src="" alt=""><br><span id="temp2"></span>°F</td>
+                                        <td><img id="img3" src="" alt=""><br><span id="temp3"></span>°F</td>
+                                    </tr>
+                                </table>
+                            </div>
+                    </section>
+                    <section class="localcomp"> 
+                        <h2 class="topbusiness">Top 3 Business in Growth</h2>
+                        <div class="ram">
+                            <div class="centerimg">
+                                <picture>
+                                    <img src="../final-project/images/teamsmall.jpg" alt="ram company photo from pexel">
+                                </picture>
+                                </div>
+                            <p>RAM Company was created in the St. George home of founders Ray & Melzie Ganowsky in 1975. In the 
+                                almost 50 years since, the company has grown and expanded and now produces ever more complex mechanical 
+                                parts and designs.</p>
+                        </div>
+                        <hr>
+                        <div class="ignite">
+                            <p>Ignite marketing, Managing your business’s location data is the most important way to make sure customers 
+                                are finding you. Google and the other search engines check hundreds of directories  to determine whose 
+                                information is most accurate. The more accurate your information is, the higher you rank on Google! </p>
+                            
+                                <div class="centerimg">
+                                    <picture>
+                                        <img src="../final-project/images/stonkssmall.jpg" alt="stonks up photo from pexel">
+                                    </picture>
+                                </div>
+                        </div>
+                        <hr>
+                        <div class="txt">
+                            <div class="centerimg">
+                                <picture>
+                                    <img src="../final-project/images/officesmall.jpg" alt="team working together photo from pexel">
+                                </picture>
+                            </div>
+                            <p>Txt180 basically a company that will let you do mass text messages with an app that will help you get in 
+                                touch with customer. They have extra usages like auto responder, alternate message, age verification, 2 
+                                way messaging, drip messages, text messages scheduler, text to win promotions, random select winner, 
+                                text to vote and many other options.</p>
+                        </div>
+                    </section>
+                    <section class="join">
+                        <h2 class="jointitle">Want to know more?</h2>
+                        <div class="calljoin">
+                            <span id="button"><a href="../final-project/join.html"></a></span>
+                        </div>
+                    </section>
+
+                    <section class="contact">
+                        <h2 class="titlecontact">Contact Information</h2>
+                        <div class="contactinformation">
+                            📍136 N 100 E, St. George, UT 84770<br>
+                            📞(435) 628-1650<br>
+                            📧joinus@washk12.org
+                    
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25449.983368075187!2d-113.5103125417883!3d37.12301633383735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca5980829bc833%3A0x732fca6bf8e3948a!2sWashington%2C%20UT!5e0!3m2!1sen!2sus!4v1639281634878!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>  
+                            </div>                    
+                    </section>
+                </div>      
+            </main>
+            <footer>
+                &copy;<span id="currentdate"></span> | Washington Chamber of Commerce | UT<br>
+                    Last Updated: <span id="last"></span>
+            </footer>
+    </div>
+</body>
+</html>

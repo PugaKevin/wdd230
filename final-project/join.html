@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../final-project/css/small.css">
+    <link rel="stylesheet" href="../final-project/css/medium.css">
+    <link rel="stylesheet" href="../final-project/css/large.css">
+    <script defer src="../final-project/js/menu.js"></script>
+    <script defer src="../final-project/js/dates.js"></script>
+    <script defer src="../final-project/js/popup.js"></script>
+    
+    <title>Join the Chamber of Commerce</title>
+
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="headerhero">
+            <picture>
+                <source srcset="../final-project/images/bannerlarge.jpg" media ="(min-width: 42em) and (max-width:60em)">
+                <source srcset="../final-project/images/bannerxtra.jpg" media ="(min-width:60em)">
+
+                <img src="../final-project/images/bannersmall.jpg" alt="Hiking image from pexel">
+            </picture>
+            
+        </div>
+    </header>
+    <main>
+         <div class="mendiv"><span class="men" onclick="openNav()">&#9776; Join</span> <a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank">
+                    <img class="socialIcon" src="../final-project/images/facebook2.png" alt="facebook Icon"></a>
+                    <a href="https://www.tiktok.com/@_ahmad_khan9/video/7035111972215557381?is_from_webapp=1&sender_device=pc&web_id7023547208214480390" target="_blank"><img class="socialIcon" src="../final-project/images/tik2.png" alt="Tik Tok Icon"></a>
+                </div>
+
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="../final-project/home.html">Home</a>
+                        <a href="../final-project/washington.html">Washington</a>
+                        <a href="../final-project/directory.html">Directory</a>
+                        <a href="../final-project/join.html">Join</a>
+                        <a href="../final-project/contact.html">Contact</a>
+                    </div>
+
+            <div class="form">
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label class="joinform">First Name* <input type="text" name="firstname" placeholder="Peter" minlength="3" pattern="[A-Za-z ]+" required></label>
+                        <label class="joinform">Last Name* <input type="text" name="lastname" placeholder="Parker" minlength="4" pattern="[A-Za-z ]+" required></label>
+                        <label class="joinform">Email* <input type="email" name="email" placeholder="peterparker@aol.com" required></label>
+                        <label class="joinform">Cell Phone <input type="tel" name="tel" placeholder="435-628-1650"></label>
+                        <label class="joinform">Title <input type="text" name="title" placeholder="VP"></label>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label class="joinform">Business Name* <input type="text" name="businessname" placeholder="The Cucaracha" minlength="5" pattern="[A-Za-z ]+" required></label>
+                        <label class="joinform">Business Address <input type="text" name="address" placeholder="1428 Elm Street" minlength="5" pattern="[A-Za-z ]+"></label>
+                        <label class="joinform">Business Website <input type="text" name="web" placeholder="lacucaracha.org" minlength="5" pattern="[A-Za-z ]+"></label>
+                        <label class="joinform">Business Description <textarea name="description"></textarea></label>
+                        <div>Membership</div>
+                        <label class="membership">
+                        <select name="membership1">
+                            <option selected="" disabled="disabled">Select Membership</option>
+                            <option value="nonprofit">Non-Profit ($100)</option>
+                            <option value="bronze">Bronze ($200)</option>
+                            <option value="silver">Silver ($400)</option>
+                            <option value="gold">Gold ($1000)</option>
+                        </select>
+                        </label>
+                        <div class="popup" onclick="myFunction()"><strong>Membership Info</strong>
+                            <span class="popuptext" id="myPopup">
+                                
+                                --Non-Profit ($100) – This membership program is a means of incentivizing, giving, and involvement within nonprofit organizations and associations. 
+                                    The organization extends additional engagement opportunities to members in exchange for donations.<br>
+                                --Bronze ($200)- This membership program gives the business an opportunity to be randomly selected to participate in upcoming events that will help
+                                    your business stand out, as well as having help from other members on important upcoming events. You will also get a 24/7 phone number that you 
+                                    may call if you have any questions. Someone will get back to you in 24 hours with an answer to your question and/or additional resources.<br>
+                                --Silver ($400)- This membership program gives you an opportunity to be randomly selected as well, however you will have a better chance. You will
+                                    have everything that Bronze has as well as advertisement on our website randomly throughout the year, as well as shout outs on TV stations, 
+                                    radio stations, and social media.<br>
+                                --Gold ($1000)- This is the one you want. You get everything from previous membership options as well as guaranteed spots on upcoming events, 
+                                    prime time advertisement on TV and radio, as well as being part of the few that get to vote on the upcoming events, as well as any other important 
+                                    issues that come up to the City of Washington. Your business is going to be heard. You also can mentor smaller businesses if you want to help. 
+                                    Your business will also have the opportunity to network with other businesses to help the community.<br>
+                            
+                                <strong>Regardless of your membership your business still matters to the City of Washington! We are here to serve you!</strong>
+                            </span>
+                        </div> 
+                        
+                    </fieldset>
+                    <div class="center"><input type="submit" value="Join" name="submitbutton" class="submitbut"></div>
+                </form>
+                <section class="meminfo">
+                    <h2 class="memberinfo">Membership Information</h2>
+                    <div class="membershipinfo">  
+                        <ul>
+                            <li>Non-Profit ($100) – This membership program is a means of incentivizing, giving, and involvement within nonprofit organizations and associations. 
+                                The organization extends additional engagement opportunities to members in exchange for donations.</li>
+                            <li>Bronze ($200)- This membership program gives the business an opportunity to be randomly selected to participate in upcoming events that will help
+                                your business stand out, as well as having help from other members on important upcoming events. You will also get a 24/7 phone number that you 
+                                may call if you have any questions. Someone will get back to you in 24 hours with an answer to your question and/or additional resources.</li>
+                            <li>Silver ($400)- This membership program gives you an opportunity to be randomly selected as well, however you will have a better chance. You will
+                                have everything that Bronze has as well as advertisement on our website randomly throughout the year, as well as shout outs on TV stations, 
+                                radio stations, and social media.</li>
+                            <li>Gold ($1000)- This is the one you want. You get everything from previous membership options as well as guaranteed spots on upcoming events, 
+                                prime time advertisement on TV and radio, as well as being part of the few that get to vote on the upcoming events, as well as any other important 
+                                issues that come up to the City of Washington. Your business is going to be heard. You also can mentor smaller businesses if you want to help. 
+                                Your business will also have the opportunity to network with other businesses to help the community.</li>
+                        </ul>
+                            <strong>Regardless of your membership your business still matters to the City of Washington! We are here to serve you!</strong>
+                            
+
+                        </div>   
+                                        
+                </section>
+            </div>
+    </main>
+    <footer>
+        &copy;<span id="currentdate"></span> | Washington Chamber of Commerce | UT<br>
+            Last Updated: <span id="last"></span>
+    </footer>
+</div>
+</body>
+</html>

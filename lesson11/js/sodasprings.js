@@ -27,6 +27,7 @@ fetch(apiURL)
                 document.querySelector('#windchilla').innerHTML = `N/A`;
             }
 });
+//1de9fc6716174ce6e8044634a4474860
 
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=1de9fc6716174ce6e8044634a4474860`;
 fetch(forecastURL)
@@ -34,10 +35,16 @@ fetch(forecastURL)
     .then((forecast) => {
         //weekdays and 18:00:00 time
         const weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        console.log(forecast);
+    
         let timelist = forecast.list.filter(x => x.dt_txt.includes("18:00:00"));
+            console.log(forecast.list);
         //adding img,alt,temps using for loop
         for (let day = 0 ; day <= 4; day ++) {
             let newday = new Date(timelist[day].dt_txt);
+
+            console.log(newday); 
+            console.log(weekdays[newday.getDay()]);
             document.getElementById(`day${day+1}`).textContent = weekdays[newday.getDay()];
             document.getElementById(`temp${day+1}`).textContent = timelist[day].main.temp.toFixed(1);
             //variables for future changes

@@ -1,0 +1,66 @@
+@media only screen and (min-width: 32.5em) {
+    .container {
+        max-width: 800px;
+      }
+      .men {
+        font-size:22px;
+      }
+      img#hidden {
+        display: block;
+      }
+      .contactinformation{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .mendiv img {
+        max-width: 40px;
+      }
+      .centerimg {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+      }
+      .ram {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 16px;
+      }
+      .ignite {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 16px;
+      }
+      .txt {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .history101{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 16px;
+      }
+      .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 16px;
+      }
+      .meminfo {
+        display: block;
+      }
+      .popup{
+        display: none;
+      }
+      iframe {
+        display: block; 
+      }
+      form {
+        font-size: 22px;
+        max-width: 300px;
+      }
+      .washfair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 16px;
+      }
+    
+      
+}
